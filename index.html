@@ -1,10 +1,122 @@
-<script>
-  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  if (/android/i.test(userAgent)) {
-    window.location.replace("https://play.google.com/store/apps/details?id=com.reality.reality&hl=en");
-  } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    window.location.replace("https://apps.apple.com/us/app/reality-sports/id6743450293");
-  } else {
-    window.location.replace("https://www.realitysport.net"); // Fallback for Desktop
-  }
-</script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reality Sports</title>
+    <meta
+      name="description"
+      content="Discover, join, and organize local sports events, tournaments, lessons, and teams with Reality Sports."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="canonical" href="https://www.realitysport.net/" />
+    <link
+      rel="icon"
+      href="https://www.realitysport.net/logo.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://www.realitysport.net/logo.svg"
+      type="image/svg+xml"
+    />
+    <link rel="apple-touch-icon" href="https://www.realitysport.net/logo.svg" />
+    <meta name="theme-color" content="#1d70f2" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Reality Sports" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Reality Sports" />
+    <meta
+      property="og:description"
+      content="Discover, join, and organize local sports events, tournaments, lessons, and teams with Reality Sports."
+    />
+    <meta property="og:url" content="https://www.realitysport.net/" />
+    <meta property="og:image" content="/assets/social-share-1200x630.jpg" />
+    <meta
+      property="og:image:secure_url"
+      content="/assets/social-share-1200x630.jpg?v=3"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Reality Sports app preview" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.realitysport.net/" />
+    <meta name="twitter:title" content="Reality Sports" />
+    <meta
+      name="twitter:description"
+      content="Discover, join, and organize local sports events, tournaments, lessons, and teams with Reality Sports."
+    />
+    <meta
+      name="twitter:image"
+      content="/assets/social-share-1200x630.jpg?v=3"
+    />
+    <meta name="twitter:image:alt" content="Reality Sports app preview" />
+
+    <meta
+      name="apple-store-description"
+      content="Download Reality Sports by RealitySports on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Reality Sports."
+    />
+    <meta
+      name="google-play-description"
+      content="Reality helps you discover, join, and organize sports events and tournaments."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Reality Sports",
+        "operatingSystem": "Android",
+        "applicationCategory": "SportsApplication",
+        "url": "https://play.google.com/store/apps/details?id=com.reality.reality&hl=en",
+        "description": "Reality Mobile is the all-in-one companion for athletes, leagues, instructors, and community organizers who want less chaos and more play. Explore curated local events, tournaments, lessons, and pickup opportunities with smart filters for location, sport, skill level, and availability so you always find something that fits your schedule. The home feed highlights quick actions, trending tournaments, personalized alerts, and your pinned communities and bookings. Organizers can manage events, approve join requests, build lineups, assign captains, and communicate with participants through a shared community feed with comments and reactions. Every module is optimized for speed and reliability with intelligent offline caching, ensuring your saved events, matches, and lessons remain available anytime. Payments are handled through secure multi-channel processing with support for wallet balance, saved cards, and promo codes, and deep-link flows provide a smooth checkout experience. You can track your profile stats, badges, visibility, and upcoming commitments while keeping your settings, payment methods, and notifications fully under control. Reality Mobile streamlines onboarding with fast authentication, cache preloading, and notification setup so you can jump into the action immediately. Whether you're joining a league, booking a lesson, managing a team, or exploring new activities, Reality Mobile keeps your entire sports experience organized, social, and effortless."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Reality Sports",
+        "operatingSystem": "iOS",
+        "applicationCategory": "SportsApplication",
+        "url": "https://apps.apple.com/us/app/reality-sports/id6743450293",
+        "description": "Reality Mobile is the all-in-one companion for athletes, leagues, instructors, and community organizers who want less chaos and more play. Explore curated local events, tournaments, lessons, and pickup opportunities with smart filters for location, sport, skill level, and availability so you always find something that fits your schedule. The home feed highlights quick actions, trending tournaments, personalized alerts, and your pinned communities and bookings. Organizers can manage events, approve join requests, build lineups, assign captains, and communicate with participants through a shared community feed with comments and reactions. Every module is optimized for speed and reliability with intelligent offline caching, ensuring your saved events, matches, and lessons remain available anytime. Payments are handled through secure multi-channel processing with support for wallet balance, saved cards, and promo codes, and deep-link flows provide a smooth checkout experience. You can track your profile stats, badges, visibility, and upcoming commitments while keeping your settings, payment methods, and notifications fully under control. Reality Mobile streamlines onboarding with fast authentication, cache preloading, and notification setup so you can jump into the action immediately. Whether you're joining a league, booking a lesson, managing a team, or exploring new activities, Reality Mobile keeps your entire sports experience organized, social, and effortless."
+      }
+    </script>
+
+    <script>
+      (function () {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        if (/android/i.test(userAgent)) {
+          window.location.replace(
+            "https://play.google.com/store/apps/details?id=com.reality.reality&hl=en",
+          );
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+          window.location.replace(
+            "https://apps.apple.com/us/app/reality-sports/id6743450293",
+          );
+        } else {
+          window.location.replace("https://www.realitysport.net");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p>
+        Reality Sports links:
+        <a
+          href="https://play.google.com/store/apps/details?id=com.reality.reality&hl=en"
+          >Google Play</a
+        >,
+        <a href="https://apps.apple.com/us/app/reality-sports/id6743450293"
+          >App Store</a
+        >,
+        <a href="https://www.realitysport.net">Website</a>
+      </p>
+    </noscript>
+  </body>
+</html>
